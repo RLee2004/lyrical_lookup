@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="project2.css" type="text/css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="project2.js" defer></script>
+
+	
+	<title>Lyrical Lookup</title>
+</head>
+<body>
+    <div class = "input-container">
+        <h1> Lyrical Lookup</h1>
+        <div class = "artist-input">
+            <span class="material-symbols-outlined">artist</span>
+            <input
+                type = "text"
+                id = "artist"
+                placeholder="Enter artist name..."
+            >
+        </div>
+        <div class = "song-input">
+            <span class="material-symbols-outlined">music_note</span>
+            <input
+                type = "text"
+                id = "song"
+                placeholder="Enter song name..."
+            >
+        </div>
+        <button onclick="getJSON()">GET LYRICS</button>
+    </div>
+
+    <div class = "output-container">
+        <div id = "lyrics"> Lyrics will be displayed here</div>
+        <br>
+    </div>
+
+    <div class = "info-container">
+        <img id = "album-pic">
+        <div id = "info">Artist summary will be displayed here</div>
+    </div>
+	<div id="rawJSON"></div>
+	
+</body>
+</html>
